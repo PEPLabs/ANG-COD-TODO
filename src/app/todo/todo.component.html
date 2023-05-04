@@ -1,0 +1,40 @@
+<!-- 
+  In this HTML template, we use Angular's built-in directives to bind data and control the
+  display and behavior of the component. 
+
+  *ngFor - this directive is used to loop through the todos array and create a list item for each todo
+
+  *ngIf - this directive is used to conditionally display elements based on the value of todo.completed
+
+  [(ngModel)] - this directive is used for two-way data binding, binding the state of the input checkbox to the value of todo.completed and updating it as the checkbox is clicked
+
+  (click) - this directive is used to listen for a click event on the delete button and call the removeTodo method to remove the todo from the array
+
+  (keyup.enter) - this directive is used to listen for the Enter key to be pressed and call the addTodo method to add the new todo to the array 
+-->
+
+
+<div class="todo">
+  <ul>
+
+    <!-- use the *ngFor directive to loop through the todos array -->
+    <li *ngFor="let todo of todos; let i = index" [class.completed]="todo.completed">
+
+      <!-- use data binding to bind the todo.completed property to the checkbox input -->
+      <label>
+        <input type="checkbox" [(ngModel)]="todo.completed">
+        <span>{{todo.name}}</span>
+      </label>
+
+      <!-- add a button to remove the todo using the removeTodo method -->
+      <button (click)="removeTodo(todo)">Delete</button>
+    </li>
+  </ul>
+
+  <div>
+
+    <!-- use data binding to bind the newTodo property to the input field -->
+    <input type="text" placeholder="Add todo" [(ngModel)]="newTodo" (keyup.enter)="addTodo()">
+    <button (click)="addTodo()">Add</button>
+  </div>
+</div>
