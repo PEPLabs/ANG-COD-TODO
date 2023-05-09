@@ -37,5 +37,4 @@ export class TodoComponent {
 
   // Step4 Implement the logic for removing items
   // removeTodo method to remove a todo from the todos array
-
 }
