@@ -2,9 +2,9 @@
   In this HTML template, we use Angular's built-in directives to bind data and control the
   display and behavior of the component. 
 
-  *ngFor - this directive is used to loop through the todos array and create a list item for each todo
+  *ngFor - this strutural directive is used to loop through the todos array and create a list item for each todo
 
-  *ngIf - this directive is used to conditionally display elements based on the value of todo.completed
+  *ngIf - this structural directive is used to conditionally display elements based on the value of todo.completed
 
   [(ngModel)] - this directive is used for two-way data binding, binding the state of the input checkbox to the value of todo.completed and updating it as the checkbox is clicked
 
@@ -13,28 +13,29 @@
   (keyup.enter) - this directive is used to listen for the Enter key to be pressed and call the addTodo method to add the new todo to the array 
 -->
 
-
 <div class="todo">
-  <ul>
+  
+  <!-- Step1 Implement a form for adding new TODO items -->
+  <div>
+    <!-- use data binding to bind the newTodo property to the input field -->
+    <input type="text" placeholder="Add todo" [(ngModel)]="newTodo" (keyup.enter)="addTodo()">
+    <button (click)="addTodo()">Add</button>
+  </div>
 
-    <!-- use the *ngFor directive to loop through the todos array -->
+  <!-- Step2 Use html tags to display the list of TODO items -->
+  <ul>
+    <!-- Step2 Use the *ngFor directive to loop through the todos array -->
     <li *ngFor="let todo of todos; let i = index" [class.completed]="todo.completed">
 
-      <!-- use data binding to bind the todo.completed property to the checkbox input -->
+      <!-- Step3 Use data binding to bind the todo.completed property to the checkbox input, allowing us to mark items as complete -->
       <label>
         <input type="checkbox" [(ngModel)]="todo.completed">
         <span>{{todo.name}}</span>
       </label>
 
-      <!-- add a button to remove the todo using the removeTodo method -->
+      <!-- Step4 Add a button with a click event to remove the todo using the removeTodo method-->
       <button (click)="removeTodo(todo)">Delete</button>
     </li>
   </ul>
 
-  <div>
-
-    <!-- use data binding to bind the newTodo property to the input field -->
-    <input type="text" placeholder="Add todo" [(ngModel)]="newTodo" (keyup.enter)="addTodo()">
-    <button (click)="addTodo()">Add</button>
-  </div>
 </div>

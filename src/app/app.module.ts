@@ -11,7 +11,7 @@ import { TodoComponent } from './todo/todo.component'; // import TodoComponent h
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule // add FormsModule for ngModel
   ],
   providers: [],
   bootstrap: [AppComponent]
