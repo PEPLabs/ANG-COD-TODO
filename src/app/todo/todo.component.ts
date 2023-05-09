@@ -21,34 +21,21 @@ export class TodoComponent {
     // Step1 Implement a method for adding new TODO items
 
   // Step1 Create addTodo method to add a new todo to the todos array
-  addTodo() {
-    // Check if newTodo is an empty or whitespace-only string
-    if (this.newTodo.trim().length === 0) {
+    // a. Check if newTodo is an empty or whitespace-only string
       // Exit the method early if newTodo is invalid
-      return;
-    }
+    
+    // b. Create a new todo object with name and completed properties
   
-    // Create a new todo object with name and completed properties
-    const newTodoObj = {
-      name: this.newTodo,
-      completed: false,
-    };
+    // c. Add the new todo object to the todos array
+
+    // d. Reset the value of newTodo to an empty string
   
-    // Add the new todo object to the todos array
-    this.todos.push(newTodoObj);
-    // Reset the value of newTodo to an empty string
-    this.newTodo = '';
-  }
  
   // Step3 Implement the logic for marking items as complete
   // we also use text-decoration: line-through in the css file
-  complete(todo: Todo) {
-    todo.completed = true;
-  }
+
 
   // Step4 Implement the logic for removing items
   // removeTodo method to remove a todo from the todos array
-  removeTodo(todo: Todo) {
-    this.todos.splice(this.todos.indexOf(todo), 1);
-  }
+
 }

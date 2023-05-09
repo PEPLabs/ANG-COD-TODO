@@ -3,6 +3,14 @@
 .completed {
     text-decoration: line-through;
 }
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  text-shadow: 2px 2px 4px #aaa;
+  margin-bottom: 20px;
+}
 .todo {
     max-width: 600px;
     margin: 0 auto;
