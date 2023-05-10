@@ -30,7 +30,9 @@
 
 ### Steps
 - [Open this github repo in VSCode](vscode://vscode.git/clone?url=<https://github.com/pablodcruz/todo-pwa.git>)
-- Install [TODO Tree Entension](vscode:extension/Gruntfuggly.todo-tree)
+- Accept all recommended extensions, or click this link to install [TODO Tree Entension](vscode:extension/Gruntfuggly.todo-tree)
+[md](./src/app/hints.md)
+
 - Open TODO Tree Side Bar and complete the steps 
 - Step1 Implement a form and method for adding new TODO items
 - Step2 Display the list of TODO items

@@ -18,19 +18,12 @@ export class TodoComponent {
   // we bind this attribute using ngModel for easy two-way data binding/updating
   newTodo: string = '';
 
-    // Step1 Implement a method for adding new TODO items
-
-  // Step1 Create addTodo method to add a new todo to the todos array
-    // a. Check if newTodo is an empty or whitespace-only string
-      // Exit the method early if newTodo is invalid
-    
+  // Step1 Createa method called addTodo to add a new todo to the todos array
+    // a. Check if newTodo is an empty or whitespace-only string. Exit the method early if newTodo is invalid
     // b. Create a new todo object with name and completed properties
-  
     // c. Add the new todo object to the todos array
-
     // d. Reset the value of newTodo to an empty string
   
- 
   // Step3 Implement the logic for marking items as complete
   // we also use text-decoration: line-through in the css file
 

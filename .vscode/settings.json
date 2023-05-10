@@ -23,6 +23,10 @@
     "Hint5",
     "Hint6",
     "Hint7",
-    "Hint8",
-],
+    "Hint8"
+    ],
+    "workbench.editorAssociations": {   
+        "*.md": "vscode.markdown.preview.editor"
+    }    
+
 }
