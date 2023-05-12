@@ -29,7 +29,7 @@
 3. Working with arrays, objects and using TypeScript in Angular 
 
 ### Steps
-- [Open this github repo in VSCode](vscode://vscode.git/clone?url=<https://github.com/pablodcruz/todo-pwa.git>)
+- [Open this github repo in VSCode]()
 - Accept all recommended extensions, or click this link to install [TODO Tree Entension](vscode:extension/Gruntfuggly.todo-tree)
 
 - Open TODO Tree Side Bar and complete the steps 
@@ -37,7 +37,7 @@
 - Step 2 Display the list of TODO items
 - Step 3 Implement the logic for marking items as complete
 - Step 4 Implement the logic for removing items
-- Verify all steps are completed by passing all tests
+- Visit [http://localhost:4200/](http://localhost:4200/) to test your application
 
 ### Requirements
 

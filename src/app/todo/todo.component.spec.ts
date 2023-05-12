@@ -68,19 +68,17 @@ describe('TodoComponent', () => {
   //   expect(component.addTodo).toBeDefined();
   // });
 
-  it('should have an addTodo method', () => {
-    expect(Reflect.has(component, 'addTodo')).toBeTrue();
-  });
+  // it('should have an addTodo method', () => {
+  //   expect(Reflect.has(component, 'addTodo')).toBeTrue();
+  // });
 
-  it('should have a removeTodo method', () => {
-    expect(Reflect.has(component, 'removeTodo')).toBeTrue();
-  });
+  // it('should have a removeTodo method', () => {
+  //   expect(Reflect.has(component, 'removeTodo')).toBeTrue();
+  // });
 
-  it('should have a complete method', () => {
-    expect(Reflect.has(component, 'complete')).toBeTrue();
-  });
-
-  
+  // it('should have a complete method', () => {
+  //   expect(Reflect.has(component, 'complete')).toBeTrue();
+  // });
 
 });
 

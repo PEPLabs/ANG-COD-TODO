@@ -29,4 +29,7 @@
     "workbench.editorAssociations": {   
         "*.md": "vscode.markdown.preview.editor"
     },
+    // "sideBar": {
+    //     settings to auto display todo-tree in bottom half of side bar
+    // }
 }
