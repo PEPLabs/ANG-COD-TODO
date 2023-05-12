@@ -27,7 +27,6 @@ export class TodoComponent {
   // Step3 Implement the logic for marking items as complete
   // we also use text-decoration: line-through in the css file
 
-
   // Step4 Implement the logic for removing items
   // removeTodo method to remove a todo from the todos array
 }

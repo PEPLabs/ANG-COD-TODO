@@ -1,10 +1,6 @@
 ## Hint for Step 1
 
-Define a `newTodo` string property in the component for adding new todos
 
-```typescript
-newTodo: string = '';
-```
 
 Bind `newTodo` to the input field using `[(ngModel)]`
 
@@ -12,6 +8,11 @@ Bind `newTodo` to the input field using `[(ngModel)]`
 <input type="text" placeholder="Add todo" [(ngModel)]="newTodo">
 ```
 
+Define a `newTodo` string property in the component for adding new todos
+
+```typescript
+newTodo: string = '';
+```
 Create an `addTodo` method to add a new todo to the `todos` array
 
 ```typescript
@@ -23,6 +24,12 @@ addTodo() {
   this.todos.push(newTodoObj);
   this.newTodo = '';
 }
+```
+
+```html
+<!-- use data binding to bind the newTodo property to the input field -->
+    <input type="text" placeholder="Add todo" [(ngModel)]="newTodo" (keyup.   enter)="addTodo()">
+    <button (click)="addTodo()">Add</button>
 ```
 
 ## Hint for Step 2

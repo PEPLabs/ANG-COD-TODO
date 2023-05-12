@@ -1,3 +1,11 @@
+/* 
+  Angular Property Binding
+  When the completed property of a todo item is true, the class.completed property of the
+  corresponding list item is set to true, and the completed CSS class is applied.  
+
+  By using two-way data binding with [(ngModel)] and property binding with [class.completed],
+  we can create a todo list that allows the user to mark items as completed and see which items are completed visually.
+*/
 .completed {
   text-decoration: line-through;
 }
