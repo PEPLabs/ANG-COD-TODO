@@ -31,7 +31,6 @@
 ### Steps
 - [Open this github repo in VSCode](vscode://vscode.git/clone?url=<https://github.com/pablodcruz/todo-pwa.git>)
 - Accept all recommended extensions, or click this link to install [TODO Tree Entension](vscode:extension/Gruntfuggly.todo-tree)
-[md](./src/app/hints.md)
 
 - Open TODO Tree Side Bar and complete the steps 
 - Step1 Implement a form and method for adding new TODO items
@@ -64,9 +63,6 @@ For this activity, make sure to discuss with your group:
 1. How can you use Angular's data binding features to create a to-do list?
 2. For more information on data binding and directives, see the official Angular [Documentation](https://angular.io/guide/understanding-angular-overview) 
 
-### Solution
-
-A solution for this activity can be found in this GitHub repository: 
-[Repository Link]()
+## [Solutions](./solution.md)
 
 

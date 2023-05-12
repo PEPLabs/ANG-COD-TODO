@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-interface Todo {
-  name: string;
-  completed: boolean;
-}
+
+// Step1 Create a model/structure for your Todo objects. Should have name, and completed properties. 
+
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
@@ -10,13 +9,11 @@ interface Todo {
 })
 export class TodoComponent {
 
-  // Step2 Define a todos array with some initial data to display
-  todos: Todo[] = [{name: 'Read about Dependency Injection', completed: false},
-  {name: 'Read about Template Syntax', completed: false}];
 
   // Step1 Define a newTodo string for adding new todos
-  // we bind this attribute using ngModel for easy two-way data binding/updating
-  newTodo: string = '';
+  // we will bind this attribute in the todo.component.html using ngModel for easy two-way data binding/updating
+
+  // Step2 Define a todos array with some initial data to display
 
   // Step1 Createa method called addTodo to add a new todo to the todos array
     // a. Check if newTodo is an empty or whitespace-only string. Exit the method early if newTodo is invalid

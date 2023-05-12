@@ -24,7 +24,7 @@
     "Hint5",
     "Hint6",
     "Hint7",
-    "Hint8"
+    "Solution"
     ],
     "workbench.editorAssociations": {   
         "*.md": "vscode.markdown.preview.editor"

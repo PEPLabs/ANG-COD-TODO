@@ -1,11 +1,19 @@
 ## Hint for Step 1
 
-
+Create a model/structure for your Todo objects. Should have name, and completed properties. 
+```typescript
+interface Todo {
+  name: string;
+  completed: boolean;
+}
+```
 
 Bind `newTodo` to the input field using `[(ngModel)]`
 
 ```html
-<input type="text" placeholder="Add todo" [(ngModel)]="newTodo">
+<!-- use data binding to bind the newTodo property to the input field -->
+    <input type="text" placeholder="Add todo" [(ngModel)]="newTodo" (keyup.   enter)="addTodo()">
+    <button (click)="addTodo()">Add</button>
 ```
 
 Define a `newTodo` string property in the component for adding new todos
@@ -26,12 +34,6 @@ addTodo() {
 }
 ```
 
-```html
-<!-- use data binding to bind the newTodo property to the input field -->
-    <input type="text" placeholder="Add todo" [(ngModel)]="newTodo" (keyup.   enter)="addTodo()">
-    <button (click)="addTodo()">Add</button>
-```
-
 ## Hint for Step 2
 
 Use the `*ngFor` directive to loop through the `todos` array and display each item
@@ -42,7 +44,7 @@ Use the `*ngFor` directive to loop through the `todos` array and display each it
 </li>
 ```
 
-Use property binding to set the class attribute of each item to `completed` if it is marked as completed
+Use `*ngFor` structural directiveand the property binding syntax `[]` to set the class attribute of each item to `completed` if it is marked as completed
 
 ```html
 <li *ngFor="let todo of todos" [class.completed]="todo.completed">
