@@ -28,15 +28,17 @@
 2. Implementing one-war and two-way data binding
 3. Working with arrays, objects and using TypeScript in Angular 
 
-### Steps
+### Project Set-Up and Todo Tree
 - [Open this github repo in VSCode]()
-- Accept all recommended extensions, or click this link to install [TODO Tree Entension](vscode:extension/Gruntfuggly.todo-tree)
+- Accept all recommended extensions, or click this link to install [Todo Tree Extension](vscode:extension/Gruntfuggly.todo-tree)
+- Open Todo Tree Side Bar and complete the steps 
+- Todo Tree is an extension that displays items that you need to work on in the codebase. If you look in the Todo Tree sidebar, you will see a list of steps to complete.
 
-- Open TODO Tree Side Bar and complete the steps 
-- Step1 Implement a form and method for adding new TODO items
-- Step 2 Display the list of TODO items
-- Step 3 Implement the logic for marking items as complete
-- Step 4 Implement the logic for removing items
+### Steps
+- Step 1: Implement a form and method for adding new TODO items
+- Step 2: Display the list of TODO items
+- Step 3: Implement the logic for marking items as complete
+- Step 4: Implement the logic for removing items
 - Visit [http://localhost:4200/](http://localhost:4200/) to test your application
 
 ### Requirements
@@ -52,9 +54,9 @@
 
 ### Stretch Goals (optional section)
 
-1. Add a feature to delete to-do items from the list.
-1. Add a feature to edit to-do items from the list.
-2. Implement a routing system to navigate between the to-do list component and the add-to-do form.
+1. Add a feature to delete TODO items from the list.
+1. Add a feature to edit TODO items from the list.
+2. Implement a routing system to navigate between the TODO list component and the add-TODO form.
 
 ### Discussion & FAQ
 
@@ -64,5 +66,3 @@ For this activity, make sure to discuss with your group:
 2. For more information on data binding and directives, see the official Angular [Documentation](https://angular.io/guide/understanding-angular-overview) 
 
 ## [Solutions](./solution.md)
-
-
